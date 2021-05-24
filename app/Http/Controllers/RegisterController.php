@@ -12,6 +12,10 @@ class RegisterController extends Controller
         return view('auth.register');
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function register(Request $request)
     {
         try {
