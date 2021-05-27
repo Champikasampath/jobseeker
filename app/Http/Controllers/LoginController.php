@@ -41,4 +41,9 @@ class LoginController extends Controller
 
         return redirect('/');
     }
+
+    public function candidate()
+    {
+        return view('candidate.index');
+    }
 }

@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/login', [\App\Http\Controllers\LoginController::class, 'login'])->name('login');
 Route::get('/register', [\App\Http\Controllers\RegisterController::class, 'displayRegistrationForm'])->name('displayRegistrationForm');
 Route::get('/logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
+
+Route::get('/candidate', [\App\Http\Controllers\LoginController::class, 'candidate'])->name('candidate');
