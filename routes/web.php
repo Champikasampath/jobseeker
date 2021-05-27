@@ -22,3 +22,4 @@ Route::get('/register', [\App\Http\Controllers\RegisterController::class, 'displ
 Route::get('/logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 
 Route::get('/candidate', [\App\Http\Controllers\LoginController::class, 'candidate'])->name('candidate');
+Route::get('/employee', [\App\Http\Controllers\LoginController::class, 'employee'])->name('employee');

@@ -46,4 +46,9 @@ class LoginController extends Controller
     {
         return view('candidate.index');
     }
+
+    public function employee()
+    {
+        return view('employee.index');
+    }
 }
