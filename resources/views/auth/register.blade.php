@@ -102,41 +102,42 @@ margin-left: 4px;
     <div class="d-flex justify-content-center h-100">
         <div class="card">
             <div class="card-header">
-                <h3>Sign In</h3>
+                <h3>Register</h3>
             </div>
-            <div class="card-body">
-
-            @error('email', 'login')
-            <div class="alert alert-danger">{{ $message }}</div>
-            @enderror
+            <div class="card-body">            
 
                 <form action="/register" method="post">
                     @csrf
+
+                    @error('email', 'login')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Full Name"  name="fullname">
+                        <input type="text" class="form-control" placeholder="Full Name"  name="fullname" required="">
                         
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-envelope-open"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Email"  name="email">
+                        <input type="text" class="form-control" placeholder="Email"  name="email" required="">
                         
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" class="form-control" placeholder="Password" name="password">
+                        <input type="password" class="form-control" placeholder="Password" name="password" required="">
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password">
+                        <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" required="">
                     </div>
                     <div class="form-group">
                         <input type="submit" name="register" value="Register" class="btn float-right login_btn">

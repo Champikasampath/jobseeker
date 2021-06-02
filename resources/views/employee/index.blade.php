@@ -111,19 +111,54 @@ body{
 				<div class="col-lg-4">
 					<div class="card">
 						<div class="col-lg-12" style="padding-top: 15px;">
-							<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="100%">
+							<img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Admin" class="rounded-circle p-1 bg-primary" width="100%">
 						</div>
 						<div class="card-body">
 							<div class="d-flex flex-column align-items-center text-center">								
 								<div class="mt-3">							
-									<h4>Name</h4>
-									<p class="text-secondary mb-1">Previous Position</p>
-									<p class="text-muted font-size-sm">Living city</p>
+									<h4>John Doe</h4>
+									<p class="text-secondary mb-1">Trainee developer</p>
+									<p class="text-muted font-size-sm">Colombo</p>
 								</div>
 							</div>							
 						</div>
 					</div>
 				</div>
+
+				<div class="col-lg-4">
+					<div class="card">
+						<div class="col-lg-12" style="padding-top: 15px;">
+							<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Admin" class="rounded-circle p-1 bg-primary" width="100%">
+						</div>
+						<div class="card-body">
+							<div class="d-flex flex-column align-items-center text-center">								
+								<div class="mt-3">							
+									<h4>Jane Doe</h4>
+									<p class="text-secondary mb-1">Intern</p>
+									<p class="text-muted font-size-sm">Gampaha</p>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="card">
+						<div class="col-lg-12" style="padding-top: 15px;">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBa838jqoj90H3aupjQZgaMikxrmoKwCoLJETeTteAG1tq8npdK3w_aXl9WWNKN-KzT4g&usqp=CAU" alt="Admin" class="rounded-circle p-1 bg-primary" width="100%">
+						</div>
+						<div class="card-body">
+							<div class="d-flex flex-column align-items-center text-center">								
+								<div class="mt-3">							
+									<h4>Roy John</h4>
+									<p class="text-secondary mb-1">Software Engineer</p>
+									<p class="text-muted font-size-sm">Gampola</p>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+
 						
 				</div>
 			</div>
