@@ -1,0 +1,8 @@
+1. install composer
+2. locate to the folder using terminal
+3. run 'composer install' command
+4. run 'cp .env.example .env' command to copy env file
+5. change database credentials
+6. run 'php artisan migrate' to migrate database
+7. run 'php artosan serve' to run application
+8. site available on 'http://127.0.0.1:8000' web url
