@@ -52,7 +52,7 @@ body{
 </div>
 
 <div class="container">
-		<div class="main-body">			
+		<div class="main-body">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="card">
@@ -66,14 +66,16 @@ body{
 									<p class="text-secondary mb-1">Previous Position</p>
 									<p class="text-muted font-size-sm">Living city</p>
 								</div>
-							</div>							
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-8">
-
-					<form>
-
+                    @error('cv_creation_error')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+					<form action="/cv-save" method="post">
+                    @csrf
 					<div class="card">
 						<div class="card-body">
 							<div class="row mb-3">
@@ -81,7 +83,7 @@ body{
 									<h6 class="mb-0">Full Name</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<input type="text" class="form-control" value="">
+									<input type="text" class="form-control" name="name" value="">
 								</div>
 							</div>
 							<div class="row mb-3">
@@ -89,15 +91,15 @@ body{
 									<h6 class="mb-0">Email</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<input type="text" class="form-control" value="">
+									<input type="text" name="email" class="form-control" value="">
 								</div>
 							</div>
 							<div class="row mb-3">
 								<div class="col-sm-3">
-									<h6 class="mb-0">Adddress</h6>
+									<h6 class="mb-0">Address</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<input type="text" class="form-control" value="">
+									<input type="text" name="address" class="form-control" value="">
 								</div>
 							</div>
 							<div class="row mb-3">
@@ -105,7 +107,7 @@ body{
 									<h6 class="mb-0">Linkedin</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<input type="text" class="form-control" value="">
+									<input type="text" class="form-control" name="linkedin" value="">
 								</div>
 							</div>
 							<div class="row mb-3">
@@ -113,7 +115,7 @@ body{
 									<h6 class="mb-0">Skype</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<input type="text" class="form-control" value="">
+									<input type="text" name="skype" class="form-control" value="">
 								</div>
 							</div>
 							<div class="row mb-3">
@@ -121,7 +123,7 @@ body{
 									<h6 class="mb-0">Mobile Number</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<input type="text" class="form-control" value="">
+									<input type="text" name="mobile_number" class="form-control" value="">
 								</div>
 							</div>
 							<div class="row mb-3">
@@ -129,7 +131,7 @@ body{
 									<h6 class="mb-0">Profile Summary</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
-									<textarea class="form-control" rows="4" cols="50"></textarea>
+									<textarea class="form-control" name="profile_summary" rows="4" cols="50"></textarea>
 								</div>
 							</div>
 							<div class="row">
@@ -139,10 +141,10 @@ body{
 								</div>
 							</div>
 						</div>
-					</div>		
+					</div>
 
-					</form>	
-						
+					</form>
+
 				</div>
 			</div>
 		</div>

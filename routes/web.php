@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::middleware([\App\Http\Middleware\Authenticate::class])->group(function () {
     Route::get('/candidate', [\App\Http\Controllers\LoginController::class, 'candidate'])->name('candidate');
+    Route::post('/cv-save', [\App\Http\Controllers\CandidateDashboardController::class, 'saveCV'])->name('cv.save');
     Route::get('/employee', [\App\Http\Controllers\LoginController::class, 'employee'])->name('employee');
 });
 

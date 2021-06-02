@@ -112,7 +112,7 @@ margin-left: 4px;
                 <form action="/login" method="post">
                     @csrf
 
-                    @error('email', 'login')
+                    @error('login')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
 
