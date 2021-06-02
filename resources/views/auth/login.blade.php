@@ -106,7 +106,7 @@ margin-left: 4px;
             </div>
             <div class="card-body">
 
-                @error('email', 'login')
+                @error('login')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
@@ -116,14 +116,14 @@ margin-left: 4px;
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="far fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username" name="email">
-                        
+                        <input type="text" class="form-control" placeholder="email" name="email">
+
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" class="form-control" placeholder="password" type="password" name="emailpassword">
+                        <input type="password" class="form-control" placeholder="password" type="password" name="password">
                     </div>
                     <div class="form-group">
                         <input type="submit" name="login" value="Login" class="btn float-right login_btn">
@@ -141,5 +141,5 @@ margin-left: 4px;
         </div>
     </div>
 </div>
-                   
+
 @endsection
