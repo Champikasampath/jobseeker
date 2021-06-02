@@ -120,23 +120,16 @@ margin-left: 4px;
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="far fa-user"></i></span>
                         </div>
-<<<<<<< HEAD
-                        <input type="text" class="form-control" placeholder="email" name="email">
 
-=======
                         <input type="text" class="form-control" placeholder="username" name="email" required="">
 
->>>>>>> 699d1ebd654eea5e0be38c5d6813bc38b0ffc051
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-<<<<<<< HEAD
                         <input type="password" class="form-control" placeholder="password" type="password" name="password">
-=======
-                        <input type="password" class="form-control" placeholder="password" type="password" name="emailpassword" required="">
->>>>>>> 699d1ebd654eea5e0be38c5d6813bc38b0ffc051
+
                     </div>
                     <div class="form-group">
                         <input type="submit" name="login" value="Login" class="btn float-right login_btn">
